@@ -1,4 +1,4 @@
-import { Context, Hono } from 'hono'
+import { Hono } from 'hono'
 import Layout from './views/__layout'
 import HomePage from './views/home'
 
