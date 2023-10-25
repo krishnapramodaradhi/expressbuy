@@ -1,4 +1,4 @@
-# express-hub
+# expressbuy
 
 To install dependencies:
 
