@@ -13,6 +13,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@libsql/client": "^0.3.6",
     "hono": "^3.8.3"
   }
 }

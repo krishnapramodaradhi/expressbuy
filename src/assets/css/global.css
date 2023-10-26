@@ -1,0 +1,17 @@
+:root {
+  --background-clr: #f1f5f9;
+  --primary-clr: #2dd4bf;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-clr);
+  color: var(--primary-clr);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-clr: #111827;
+    --primary-clr: #2dd4bf;
+  }
+}
