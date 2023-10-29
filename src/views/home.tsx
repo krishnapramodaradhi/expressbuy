@@ -1,5 +1,14 @@
 import { FC } from 'hono/jsx'
+import { User } from '../config/types'
 
-const HomePage: FC = () => <h1 class='color'>Hello world</h1>
+const HomePage: FC<{ users: User[] }> = ({ users }) => (
+  <ul>
+    {users.map((user) => (
+      <li>
+        {user.email} - {user.age}
+      </li>
+    ))}
+  </ul>
+)
 
 export default HomePage

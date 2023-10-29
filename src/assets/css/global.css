@@ -1,6 +1,6 @@
 :root {
   --background-clr: #f1f5f9;
-  --primary-clr: #2dd4bf;
+  --primary-clr: #d40000;
 }
 
 body {
@@ -9,9 +9,50 @@ body {
   color: var(--primary-clr);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background-clr: #111827;
     --primary-clr: #2dd4bf;
   }
+} */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4em;
+  padding-inline: 2em;
+}
+
+.logo-container {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.search-container {
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  width: 40%;
+  background-color: #fff;
+}
+
+.search-container:focus-within {
+  outline: 1px solid var(--primary-clr);
+  border-color: var(--primary-clr);
+}
+
+.search-container > input {
+  background-color: inherit;
+  border: none;
+  width: 100%;
+}
+
+.search-container > input:focus {
+  outline: none;
 }
